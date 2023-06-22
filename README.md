@@ -1,3 +1,12 @@
+A simple React app that allows users to upload medical bills. It has:
+
+A form to input the medical bill information, including the patient name and address, the hospital name, date of service, bill amount and a picture of the bill.
+
+A summary page that displays the input data, along with a button to return to the form and edit the information.
+
+A home page that displays a list of the uploaded bills from the input form. The home page should have a button to open the form and add a new bill.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
