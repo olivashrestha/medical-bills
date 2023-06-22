@@ -1,38 +1,273 @@
-.App {
-  text-align: center;
+*{
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: #e2b2ff;
+  color: #fefced;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #fefced;
+  padding: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 550;
 }
+
+.logo-nav{
+  display: flex; 
+  text-align: left;
+}
+.mainicon{
+  color: #ff67ab;
+  font-size: 30px;
+  font-weight: 900;
+  order: 1;
+  padding-right: 990px;
+}
+
+
+.App-header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  order: 3;
+}
+
+.App-header li {
+  margin-right: 20px;
+  margin-top: 7px;
+}
+
+.App-header a {
+  font-size: 18px;
+  font-weight: 660;
+  text-decoration: none;
+  color: #a767ff;
+  padding: 15px;
+  border-radius: 3px;
+}
+
+.App-header a:hover {
+  background-color: #faf2b5;
+  color: #e2b2ff;
+}
+
 
 .App-link {
   color: #61dafb;
 }
+.home{
+  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 30px 50px;
+  text-align: left;
+  background-color: #faf2b5;
+  border-radius: 20px;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home h2{
+  padding: 20px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #a767ff;
+  font-size: 35px;
+}
+
+
+
+
+.entry {
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #fefced;
+  padding: 25px 30px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Center align items vertically */
+}
+
+.entry h4{
+  color: #ff67ab;
+  margin-right: 20px;
+}
+
+.icon{
+  font-size: 40px;
+  font-weight: 900;
+}
+.home ul li h3{
+  padding: 5px 0;
+  font-size: 25 px;
+  color: #e2b2ff;
+}
+
+.summary-link{
+  font-size: 20 px;
+  color: #ff67ab;
+}
+
+
+.medical-bill-form-container {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 30px 50px;
+  text-align: left;
+  background-color: #faf2b5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.medical-bill-form-container h2 {
+  padding: 10px 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #a767ff;
+  font-size: 35px;
+}
+
+.medical-bill-form-container form {
+
+  margin-top: 20px ;
+ width: 100%;
+ max-width: 1000px;
+  
+}
+
+.medical-bill-form-container label {
+  display: block;
+  padding: 5px 70px;
+  
+}
+
+.form-lable{
+  font-size: 30 px;
+  font-weight: 700;
+  color: #a767ff;
+  padding: 5px 29px;
+  margin-left: 120px;
+}
+.medical-bill-form-container input {
+  margin-left: 150px;
+  width: 60%;
+  padding: 5px 20px;
+  border: 3px solid #a767ff;
+  border-radius: 10px;
+  color: #ff67ab;
+  
+}
+
+.medical-bill-form-container button {
+  padding: 10px 40px;
+  margin-left: 330px;
+  background-color: #ff67ab;
+  color: #fefced;
+  border:#fefced;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.medical-bill-form-container button:hover {
+  background-color: #e2b2ff;
+}
+
+.summary-display {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 30px 50px;
+  text-align: left;
+  background-color: #faf2b5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-display h2 {
+  padding: 10px 0;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #a767ff;
+  font-size: 35px;
+}
+
+
+
+.summary-display img {
+ max-height: 50%;
+  width: auto;
+  border-radius: 15px;
+  border-width: 5px;
+  padding: 20px;
+  border: 5px solid #ff67ab;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fefced;
+}
+
+.summary-display button {
+  padding: 10px 40px;
+  background-color: #ff67ab;
+  color: #fefced;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.summary-display button:hover {
+  background-color: #e2b2ff;
+}
+
+
+.summary-display span {
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 660;
+  display: inline-block;
+  width: 170px; /* Adjust the width as needed */
+}
+
+.summary-display .summary-attributes {
+  background-color: #fefced;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 18 px;
+  font-weight: 600;
+  color: #ff67ab;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+
+.error-message{
+  padding: 20px, 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: red;
+  border: 5px solid #ff67ab;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fefced;
+}
+
+.A{
+  padding: 5px 20px;
 }
